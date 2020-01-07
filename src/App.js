@@ -1,21 +1,18 @@
 import React from "react"
-
-function Potato({ name, gender }) {
-  console.log(name)
-  return (
-    <h1>
-      I am {name}, and I am {gender} human
-    </h1>
-  )
-}
+import { HashRouter, Route } from "react-router-dom"
+import About from "./routes/About"
+import Home from "./routes/Home"
+import Navigation from "./components/Navigation"
+import Detail from "./routes/Detail"
 
 function App() {
   return (
-    <div className="App">
-      <p>hello</p>
-      <Potato name="Seo" gender="Male" />
-      <Potato name="MingD" gender="Female" />
-    </div>
+    <HashRouter>
+      <Navigation />
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/movie-detail" component={Detail} show="false" />
+    </HashRouter>
   )
 }
 
