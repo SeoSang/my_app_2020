@@ -12,7 +12,7 @@
 <br>
 
 ![Alt text](./main.png)
-[직접보기]("https://seosang.github.io/my_app_2020/")
+[직접보기](https://seosang.github.io/my_app_2020/)
 
 <br>
 
